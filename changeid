@@ -1,0 +1,22 @@
+#!/bin/bash
+newid=1800
+for ((oldid=500; oldid<=509; ++oldid )) ;
+do
+sed -i "s/$oldid/$newid/g" "/home/oleg/.FTB/CrashLanding/minecraft/config/Reika/RotaryCraft.cfg"
+newid=$[newid + 1]
+echo "Id "$newid " Changed"
+done
+
+for ((oldid=1600; oldid<=1617; ++oldid )) ;
+do
+sed -i "s/$oldid/$newid/g" "/home/oleg/.FTB/CrashLanding/minecraft/config/Reika/ReactorCraft.cfg"
+newid=$[newid + 1]
+echo "Id "$newid " Changed"
+done
+
+for ((oldid=4093; oldid<=4094; ++oldid )) ;
+do
+sed -i "s/$oldid/$newid/g" "/home/oleg/.FTB/CrashLanding/minecraft/config/enderio/EnderIO.cfg"
+newid=$[newid + 1]
+echo "Id "$newid " Changed"
+done
